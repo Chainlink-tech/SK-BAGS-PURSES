@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LuxeHer Kenya | Premium Women Bags & Purses</title>
+    <title>LuxeHer Kenya | Bags & Purses Store</title>
     <meta
       name="description"
-      content="LuxeHer Kenya: Shop elegant women bags and purses with premium styling, smooth shopping experience, and fast delivery across Kenya."
+      content="LuxeHer Kenya is a premium women bags & purses ecommerce demo with advanced UI/UX, modals, account tabs, and payment integration demo."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,126 +23,208 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="ambient-layer" aria-hidden="true"></div>
+    <div class="ambient-bg" aria-hidden="true"></div>
 
-    <div class="app-shell">
+    <div class="layout">
       <header class="hero glass" id="home">
         <div class="hero-copy">
-          <p class="pill"><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
-          <h1>Elegant Bags for Bold, Beautiful Kenyan Women</h1>
-          <p class="lead">
-            Premium totes, mini purses, office handbags, and evening clutches in a girlish luxury theme,
-            designed with smooth iOS-inspired liquid glass visuals.
+          <p class="pill"><i class="fa-solid fa-location-dot"></i> Delivering Across Kenya</p>
+          <h1>Luxury Women Bags & Purses with iOS Liquid Glass Beauty</h1>
+          <p>
+            Shop elegant handbags, totes, clutches and mini purses with modern girlish aesthetics, 3D
+            card motion, smooth interactions, and premium checkout experience.
           </p>
           <div class="hero-actions">
-            <button class="btn btn-primary" data-action="shop-now">Shop Collection</button>
-            <button class="btn btn-soft" data-action="book-stylist">Talk to Stylist</button>
+            <button class="btn btn-primary" data-action="shop">Shop Collection</button>
+            <button class="btn btn-soft" data-open-modal="account-modal">My Account</button>
+            <button class="btn btn-soft" data-open-modal="newsletter-modal">Get Offers</button>
           </div>
-          <div class="hero-metrics">
-            <div><strong>4.9★</strong><span>Average Rating</span></div>
-            <div><strong>1,300+</strong><span>Happy Customers</span></div>
+          <div class="quick-stats">
+            <div><strong>4.9/5</strong><span>Customer Love</span></div>
             <div><strong>2hr</strong><span>Nairobi Dispatch</span></div>
+            <div><strong>365</strong><span>Day Support</span></div>
           </div>
         </div>
-        <div class="hero-visual glass">
+        <div class="hero-card glass">
           <img
             src="https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=1000&q=80"
-            alt="Premium pink handbag"
+            alt="Luxury pink bag"
           />
-          <div class="floating-tag">New Season Drop ✨</div>
+          <div class="floating-badge">Spring Drop 2026 ✨</div>
         </div>
       </header>
 
-      <main class="main-layout">
-        <section class="featured" id="shop">
+      <main class="main" id="shop">
+        <section class="collection glass">
           <div class="section-head">
-            <h2>Featured Picks</h2>
+            <h2>Trending Collection</h2>
             <div class="chips">
               <button class="chip active" data-filter="all">All</button>
               <button class="chip" data-filter="tote">Totes</button>
               <button class="chip" data-filter="mini">Mini</button>
-              <button class="chip" data-filter="evening">Evening</button>
+              <button class="chip" data-filter="clutch">Clutches</button>
             </div>
           </div>
 
           <div class="product-grid">
-            <article class="product glass tilt-card" data-category="tote" data-product="Nia Rose Tote" data-price="7500">
-              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80" alt="Rose tote bag" />
-              <div class="product-info">
+            <article class="product glass tilt-card" data-category="tote" data-id="1" data-product="Nia Rose Tote" data-price="7500">
+              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80" alt="Nia Rose Tote" />
+              <div class="product-body">
                 <h3>Nia Rose Tote</h3>
-                <p>Rose vegan leather and polished gold finish.</p>
-                <div class="row">
+                <p>Soft vegan leather, roomy silhouette and polished accents.</p>
+                <div class="product-row">
                   <strong>KES 7,500</strong>
-                  <button class="btn btn-soft add-to-cart">Add</button>
+                  <div class="actions-inline">
+                    <button class="btn btn-soft btn-sm preview-btn">Preview</button>
+                    <button class="btn btn-primary btn-sm add-btn">Add</button>
+                  </div>
                 </div>
               </div>
             </article>
 
-            <article class="product glass tilt-card" data-category="mini" data-product="Amani Mini Purse" data-price="5300">
-              <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80" alt="Mini white purse" />
-              <div class="product-info">
+            <article class="product glass tilt-card" data-category="mini" data-id="2" data-product="Amani Mini Purse" data-price="5300">
+              <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80" alt="Amani Mini Purse" />
+              <div class="product-body">
                 <h3>Amani Mini Purse</h3>
-                <p>Compact chic style for brunch and events.</p>
-                <div class="row">
+                <p>Compact chic design perfect for brunches and evening outings.</p>
+                <div class="product-row">
                   <strong>KES 5,300</strong>
-                  <button class="btn btn-soft add-to-cart">Add</button>
+                  <div class="actions-inline">
+                    <button class="btn btn-soft btn-sm preview-btn">Preview</button>
+                    <button class="btn btn-primary btn-sm add-btn">Add</button>
+                  </div>
                 </div>
               </div>
             </article>
 
-            <article class="product glass tilt-card" data-category="evening" data-product="Zuri Night Clutch" data-price="4800">
-              <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80" alt="Night clutch" />
-              <div class="product-info">
+            <article class="product glass tilt-card" data-category="clutch" data-id="3" data-product="Zuri Night Clutch" data-price="4800">
+              <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80" alt="Zuri Night Clutch" />
+              <div class="product-body">
                 <h3>Zuri Night Clutch</h3>
-                <p>Shimmer clutch with elegant cross-chain strap.</p>
-                <div class="row">
+                <p>Elegant shimmer texture with detachable chain strap.</p>
+                <div class="product-row">
                   <strong>KES 4,800</strong>
-                  <button class="btn btn-soft add-to-cart">Add</button>
+                  <div class="actions-inline">
+                    <button class="btn btn-soft btn-sm preview-btn">Preview</button>
+                    <button class="btn btn-primary btn-sm add-btn">Add</button>
+                  </div>
                 </div>
               </div>
             </article>
 
-            <article class="product glass tilt-card" data-category="tote" data-product="Malkia Bucket Bag" data-price="8200">
-              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Bucket bag" />
-              <div class="product-info">
+            <article class="product glass tilt-card" data-category="tote" data-id="4" data-product="Malkia Bucket Bag" data-price="8200">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Malkia Bucket Bag" />
+              <div class="product-body">
                 <h3>Malkia Bucket Bag</h3>
-                <p>Roomy shape for office and city errands.</p>
-                <div class="row">
+                <p>Premium city bag with structured base and magnetic closure.</p>
+                <div class="product-row">
                   <strong>KES 8,200</strong>
-                  <button class="btn btn-soft add-to-cart">Add</button>
+                  <div class="actions-inline">
+                    <button class="btn btn-soft btn-sm preview-btn">Preview</button>
+                    <button class="btn btn-primary btn-sm add-btn">Add</button>
+                  </div>
                 </div>
               </div>
             </article>
           </div>
         </section>
 
-        <section class="benefits glass" id="benefits">
-          <h2>Why Women Love LuxeHer</h2>
-          <div class="benefit-grid">
-            <article><i class="fa-brands fa-apple"></i><h3>Liquid Glass Feel</h3><p>Translucent iOS-inspired premium motion UI.</p></article>
-            <article><i class="fa-solid fa-truck-fast"></i><h3>Fast Delivery</h3><p>Quick dispatch in Nairobi and nearby counties.</p></article>
-            <article><i class="fa-solid fa-credit-card"></i><h3>Secure Payments</h3><p>M-Pesa and cards in protected checkout flow.</p></article>
+        <section class="feature-grids">
+          <div class="glass feature-panel">
+            <h2>Store Features</h2>
+            <div class="info-grid">
+              <article><i class="fa-brands fa-apple"></i><h3>Liquid Glass</h3><p>Translucent iOS-style visual system with blur and gradients.</p></article>
+              <article><i class="fa-solid fa-truck-fast"></i><h3>Fast Delivery</h3><p>Same-day dispatch in Nairobi with realtime status messaging.</p></article>
+              <article><i class="fa-solid fa-shield-heart"></i><h3>Secure Orders</h3><p>Protected checkout with order confirmation and receipt.</p></article>
+              <article><i class="fa-solid fa-headset"></i><h3>24/7 Support</h3><p>Always-on support center and account order history tabs.</p></article>
+            </div>
           </div>
+
+          <aside class="glass cart" id="cart-panel">
+            <div class="section-head">
+              <h2>Cart</h2>
+              <span id="cart-count">0 items</span>
+            </div>
+            <ul id="cart-items"></ul>
+            <div class="cart-total"><span>Total</span><strong id="cart-total">KES 0</strong></div>
+            <div class="cart-actions">
+              <button class="btn btn-soft" data-open-modal="confirmation-modal">Clear Cart</button>
+              <button class="btn btn-primary" id="pay-now-btn">Pay Now</button>
+            </div>
+          </aside>
         </section>
       </main>
-
-      <aside class="cart glass" id="cart-panel" aria-live="polite">
-        <div class="section-head">
-          <h2>Shopping Cart</h2>
-          <span id="cart-count">0 items</span>
-        </div>
-        <ul id="cart-items"></ul>
-        <div class="total"><span>Total</span><strong id="cart-total">KES 0</strong></div>
-        <button class="btn btn-primary" id="checkout-btn">Checkout Now</button>
-      </aside>
     </div>
 
-    <nav class="bottom-nav glass" aria-label="Bottom navigation">
+    <nav class="bottom-nav glass">
       <button class="nav-item active" data-target="home"><i class="fa-solid fa-house"></i><span>Home</span></button>
       <button class="nav-item" data-target="shop"><i class="fa-solid fa-bag-shopping"></i><span>Shop</span></button>
-      <button class="nav-item" data-target="benefits"><i class="fa-solid fa-sparkles"></i><span>Perks</span></button>
-      <button class="nav-item" id="open-cart"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></button>
+      <button class="nav-item" data-open-modal="account-modal"><i class="fa-solid fa-user"></i><span>Account</span></button>
+      <button class="nav-item" id="scroll-cart"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></button>
     </nav>
+
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+
+    <section class="modal" id="product-modal" aria-hidden="true">
+      <div class="modal-head"><h3>Product Preview</h3><button class="icon-btn" data-close-modal>&times;</button></div>
+      <div id="product-modal-content"></div>
+    </section>
+
+    <section class="modal" id="account-modal" aria-hidden="true">
+      <div class="modal-head"><h3>My Account</h3><button class="icon-btn" data-close-modal>&times;</button></div>
+      <div class="tabs">
+        <button class="tab active" data-tab="profile">Profile</button>
+        <button class="tab" data-tab="orders">Orders</button>
+        <button class="tab" data-tab="addresses">Addresses</button>
+      </div>
+      <div class="tab-panels">
+        <div class="panel active" id="tab-profile">
+          <label>Full Name<input type="text" value="Aisha Wanjiku" /></label>
+          <label>Email<input type="email" value="aisha@email.com" /></label>
+          <button class="btn btn-primary" id="save-profile">Save Profile</button>
+        </div>
+        <div class="panel" id="tab-orders">
+          <ul class="order-list">
+            <li>#LH-4102 • Delivered • KES 8,200</li>
+            <li>#LH-3964 • In Transit • KES 5,300</li>
+            <li>#LH-3800 • Processing • KES 12,300</li>
+          </ul>
+        </div>
+        <div class="panel" id="tab-addresses">
+          <label>Primary Address<input type="text" value="Westlands, Nairobi" /></label>
+          <label>Phone<input type="text" value="+254 712 000 000" /></label>
+          <button class="btn btn-primary" id="save-address">Save Address</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal" id="payment-modal" aria-hidden="true">
+      <div class="modal-head"><h3>Payment Integration Demo</h3><button class="icon-btn" data-close-modal>&times;</button></div>
+      <p class="muted">Choose demo gateway and complete a simulated secure checkout.</p>
+      <div class="payment-grid">
+        <button class="pay-option active" data-gateway="mpesa"><i class="fa-solid fa-mobile-screen"></i><span>M-Pesa STK</span></button>
+        <button class="pay-option" data-gateway="card"><i class="fa-regular fa-credit-card"></i><span>Card (Visa/Mastercard)</span></button>
+        <button class="pay-option" data-gateway="airtel"><i class="fa-solid fa-sim-card"></i><span>Airtel Money</span></button>
+      </div>
+      <label>Phone / Card Holder<input id="payment-contact" type="text" placeholder="e.g. +2547xxxxxxx" /></label>
+      <label>Amount<input id="payment-amount" type="text" readonly /></label>
+      <button class="btn btn-primary" id="simulate-payment">Confirm & Pay</button>
+    </section>
+
+    <section class="modal" id="confirmation-modal" aria-hidden="true">
+      <div class="modal-head"><h3>Confirm Action</h3><button class="icon-btn" data-close-modal>&times;</button></div>
+      <p>Do you really want to clear all items from the cart?</p>
+      <div class="confirm-actions">
+        <button class="btn btn-soft" data-close-modal>No, Keep Items</button>
+        <button class="btn btn-primary" id="confirm-clear">Yes, Clear Cart</button>
+      </div>
+    </section>
+
+    <section class="modal" id="newsletter-modal" aria-hidden="true">
+      <div class="modal-head"><h3>Get Girlish Offers</h3><button class="icon-btn" data-close-modal>&times;</button></div>
+      <label>Email Address<input id="newsletter-email" type="email" placeholder="name@email.com" /></label>
+      <button class="btn btn-primary" id="newsletter-submit">Subscribe</button>
+    </section>
 
     <div class="toast" id="toast"></div>
 
